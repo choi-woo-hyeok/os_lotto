@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Winnings</title>
+</head>
+
+<body>
+
+    <h1>당첨 내역</h1>
+
+    {% for winning in winnings %}
+
+        <p>
+            등수 : {{ winning.rank }}등
+        </p>
+
+        <p>
+            당첨 금액 : {{ winning.prize_amount }}원
+        </p>
+
+        <hr>
+
+    {% endfor %}
+
+    <a href="/">
+        홈으로
+    </a>
+
+</body>
+</html>

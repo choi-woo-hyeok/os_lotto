@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Manual Lotto</title>
+</head>
+<body>
+
+<h1>수동 번호 구매</h1>
+
+<form method="POST">
+
+    {% csrf_token %}
+
+    <input type="number" name="num1">
+    <input type="number" name="num2">
+    <input type="number" name="num3">
+    <input type="number" name="num4">
+    <input type="number" name="num5">
+    <input type="number" name="num6">
+
+    <button type="submit">
+        구매
+    </button>
+
+</form>
+
+</body>
+</html>
